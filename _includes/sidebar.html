@@ -1,0 +1,8 @@
+<div class="sidebar">
+  <h2 id="side">Recent Posts</h2>
+  {% for post in site.posts offset: 0 limit: 5 %}
+  <a id="side" href="{{ post.url }}">{{ post.title }}</a>
+  <hr class="separator" />
+  {% endfor %}
+  <b><a id="side" href="/archive/">More posts</a></b>
+</div>

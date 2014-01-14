@@ -1,0 +1,10 @@
+name: "Yuqi Hou"
+description: "Personal landing page and blog of Yuqi Hou"
+
+baseurl: "yuqi.hou.com"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+pygments: true

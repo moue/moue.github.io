@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Yuqi Hou</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal site of Yuqi Hou, student, eccentric and creative. Currently on leave from Harvard, working at an internet content distribution company. See my projects, writing, resume, and interests.">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.3.0/base-min.css&pure/0.3.0/grids-min.css">		
+ 		<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Podkova' rel='stylesheet' type='text/css'>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="{{ site.baseurl }}/js/lightbox-2.6.min.js"></script>
+		<link href="{{ site.baseurl }}/css/lightbox.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrapper" class="pure-g-r">
+      {% include header.html %}
+      <main>{{ content }}</main>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
