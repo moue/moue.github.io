@@ -1,7 +1,7 @@
-name: Yuqi Hou
-description: Personal landing page and blog of Yuqi Hou
+name: "Yuqi Hou"
+description: "Personal landing page and blog of Yuqi Hou"
 
-baseurl: yuqihou.com
+baseurl: ""
 relative_permalinks: false
 
 paginate: 10
