@@ -16,10 +16,12 @@
   </head>
 
   <body>
-    <div id="wrapper" class="pure-g-r">
-      {% include header.html %}
-      <main>{{ content }}</main>
-      {% include footer.html %}
-    </div>
+    <main id="wrapper">
+      <div class="pure-g-r">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+      </div>
+    </main>
   </body>
 </html>
