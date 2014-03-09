@@ -1,3 +1,4 @@
+/** variables **/
 /* fonts */
 @font-face {
   font-family: 'cartonslab';
@@ -6,7 +7,11 @@
   font-weight: normal;
   font-style: normal;
 }
-/* helpers */
+/* grid */
+.box {
+  padding: 0em 1em;
+}
+/* mixins */
 .pad-top {
   padding-top: 1em;
 }
@@ -25,7 +30,6 @@
 /* header */
 #title h1 a,
 #title a {
-  float: left;
   font-family: 'Permanent Marker', san-serif;
   color: black;
 }
@@ -35,9 +39,37 @@
 header {
   margin-bottom: 3em;
 }
+@media (max-width: 767px) {
+  header {
+    text-align: center;
+  }
+}
+nav {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  nav {
+    text-align: center;
+  }
+}
 /* footer */
 footer {
-  margin-top: 3em;
+  margin: 3em 0em;
+  border-top: black 1px solid;
+}
+footer #attr {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
+  footer #attr {
+    text-align: center;
+  }
+  footer p {
+    margin-bottom: 0em;
+  }
 }
 /* home */
 .round {
@@ -45,7 +77,13 @@ footer {
   border-radius: 50%;
   -webkit-border-radius: 50%;
 }
+#selfie {
+  text-align: center;
+}
 /* lists & artwork */
+figcaption {
+  font-family: 'Podkova', serif;
+}
 #recs img {
   height: 275px;
   width: auto;
@@ -109,21 +147,35 @@ dd {
 dt {
   font-weight: bold;
 }
-#navigation a {
-  display: inline-block;
+.custom-horizontal {
+  margin-top: 20px;
+  text-align: right;
+}
+.custom-horizontal ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.custom-horizontal li {
+  display: inline;
+  text-decoration: none;
+  padding-right: 1em;
+}
+.custom-horizontal a {
   font-size: 1.3em;
   font-weight: 100;
   padding: 4px 12px 6px;
   margin: 0 4px;
   font-family: 'Permanent Marker', cursive;
 }
-#navigation a:hover,
-#navigation a.current {
+.custom-horizontal a:hover {
   background: #333333;
   color: #FFF;
 }
-#navigation li {
-  float: left;
+@media (max-width: 767px) {
+  .custom-horizontal {
+    text-align: center;
+  }
 }
 .list {
   padding: 0;

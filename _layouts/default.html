@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -17,11 +19,9 @@
 
   <body>
     <main id="wrapper">
-      <div class="pure-g-r">
-        {% include header.html %}
-        {{ content }}
-        {% include footer.html %}
-      </div>
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
     </main>
   </body>
 </html>
