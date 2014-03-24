@@ -9,6 +9,6 @@ Fast forward to college, when I enrolled in my first computer science class fres
 
 It inspired me to finally take action on the website ideas that had been crowding my thoughts for the better part of a year. 2013 was the year that I made [Join Harvard](http://www.hcs.harvard.edu/extracurriculars/) with [Sharon Zhou](http://sharonzhou.me/), George Lok, and Annie Wei. It was also the year that I installed Linux Mint on my Windows machine to make development easier. 
 
-I've since started to document all the issues I've run into, especially since nothing ever seems to work out of the box for me on my linux machine. This blog is a way for me to my problem/solution log public, in case people run into the same issues as I did. It's also meant to track my learning and progress towards all the initiatives, projects, and websites I've started.
+I've since started to document all the issues I've run into, especially since nothing ever seems to work out of the box for me on my linux machine. This blog is a way for me to make my problem/solution log public, in case people run into the same issues as I did. It's also meant to track my learning and progress towards all the initiatives, projects, and websites I've started.
 
 I encourage feedback on my posts via comments and [twitter](https://twitter.com/yuqih) replies.
