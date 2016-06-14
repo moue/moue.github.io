@@ -46,38 +46,6 @@
 }
 
 @font-face {
-  font-family: 'quattrocento';
-  src: url('../fonts/quattrocento/Quattrocento-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserrat';
-  src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'neuton';
-  src: url('../fonts/neuton/Neuton-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'carton-slab';
-  src: url('../fonts/carbon-slab/carton-slab-webfont.eot');
-  src: url('../fonts/carbon-slab/carton-slab-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/carbon-slab/carton-slab-webfont.woff') format('woff'),
-  url('../fonts/carbon-slab/carton-slab-webfont.ttf') format('truetype'),
-  url('../fonts/carbon-slab/carton-slab-webfont.svg#cartonslab') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'permanent-marker';
   src: url('../fonts/permanent-marker/PermanentMarker.ttf') format('truetype');
   font-weight: 400;
@@ -98,6 +66,56 @@ $body-font-weight: 400;
 $subtitle-font: open-sans;
 $subtitle-font-weight: 600;
 $wrapper-width: 1050px;
+
+/* globals */
+
+body, html {
+  border-top: .2em solid black;
+}
+
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+  font-family: $body-font, serif;
+  font-size: 18px;
+  font-weight: $body-font-weight;
+}
+
+/* grid */
+
+.box {
+  padding: 0em 1em;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $accent;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover {
+  color: darken($accent, 10%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-transform: uppercase;
+  font-family: $header-font, san-serif;
+  font-weight: $header-font-weight;
+}
+
+dd {
+  margin: 0px 0px 32px 0px;
+  line-height: 1.8em;
+  display: block;
+}
+
+dt {
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+  display: block;
+}
 
 /*! 
  * Helper css classes
@@ -122,59 +140,37 @@ $wrapper-width: 1050px;
   background-color: $section-color;
 }
 
-/*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
-.list-inline {
-    padding-left: 0;
-    list-style: none;
-    margin-left: -5px;
+.pad-top {
+  padding-top: 1em;
 }
 
-.list-inline > li {
-  display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
+.pad-bottom {
+  padding-bottom: 1em;
 }
 
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-.btn-social {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 20px;
-    line-height: 45px;
-    margin-top: 15px;
+.pad-right {
+  padding-right: 1em;
 }
 
-.btn-outline {
-    border: solid 2px #EA413E;
-    font-size: 20px;
-    color: #EA413E;
-    background: 0 0;
-    transition: all .3s ease-in-out;
+.pad-left {
+  padding-left: 1em;
 }
 
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-    border: solid 2px black;
-    color: white;
-    background: black;
+.pull-left {
+  float: left;
 }
 
+.pull-right {
+  float: right;
+}
+
+.round {
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+/* post */
 #post {
   .image-half-width-left {
     float: left;
@@ -228,38 +224,6 @@ hr.separator {
   margin: 40px 0;
 }
 
-/* grid */
-
-.box {
-  padding: 0em 1em;
-}
-
-/* mixins */
-
-.pad-top {
-  padding-top: 1em;
-}
-
-.pad-bottom {
-  padding-bottom: 1em;
-}
-
-.pad-right {
-  padding-right: 1em;
-}
-
-.pad-left {
-  padding-left: 1em;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
 /* header */
 
 #title {
@@ -286,7 +250,7 @@ hr.separator {
 }
 
 #navigation {
-  //float:right;
+  float:right;
   @media(max-width: $breakpoint-menu) {
     float:none;
     margin-top: 20px;
@@ -322,6 +286,54 @@ nav {
   transition: all 0.5s;
 }
 
+
+.custom-horizontal {
+  a:hover {
+    background: #333333;
+    color: #FFF;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+  }
+  li {
+    display: inline;
+    text-decoration: none;
+    padding-right: 1em;
+  }
+
+  //margin-top: 1.67em;
+  text-align:right;
+  @media (max-width: $breakpoint){
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+.custom-vertical {
+  @media (max-width: $breakpoint-menu){
+    text-align: center;
+    margin-top: 40px;
+
+    ul {
+      padding-left: 0px;
+    }
+
+    ul li {
+      font-family: $nav-font;
+      font-weight: $nav-font-weight;
+      padding: 12px;
+      border: 1px white solid;
+      background-color: black;
+      a{
+        color: white;
+      }
+    }
+  }
+}
+
 /* footer */
 
 footer {
@@ -336,6 +348,7 @@ footer {
     text-align: center;
     #attr {
       text-align: center;
+      padding-bottom: 1em;
     }
     p {
       margin-bottom: 0em;
@@ -345,23 +358,111 @@ footer {
 
 /* home */
 
-.intro {
+#intro {
+  width: 75%;
+  *width: 74.9690%;
+  float: left;
+  @media screen and (max-width: 35.5em) {
+    width:100%;
+    float: none;
+  }
+}
+
+#intro p {
   font-family:$subtitle-font;
   font-weight:$subtitle-font-weight;
   font-size: 28px;
   @media(max-width: $breakpoint-menu) {
+    font-size: 1.4em;
     margin-top: 0px;
   }
 }
 
-.round {
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
+#selfie {
+  width: 25%;
+  *width: 24.9690%;
+  float: right;
+  @media screen and (max-width: 35.5em) {
+    width:100%;
+  }
 }
 
-#selfie {
+#selfie figure {
+  margin-top:28px;
+  @media screen and (max-width: $breakpoint) {
+    margin-top: 0;
+  }
+}
+
+#selfie figure {
+  text-align: left;
+  @media screen and (max-width: 35.5em) {
+    text-align:center;
+  }
+}
+
+#selfie figure > img {
+  width: 90%;
+  @media screen and (max-width: 35.5em) {
+    margin-bottom: 28px;
+    width:60%;
+  }
+}
+
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 0 -5px;
+  padding-top: 15px;
+  @media screen and (max-width: $breakpoint-menu) {
+    padding-top: 0;
+  }
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+.btn-social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
   text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.btn-outline {
+  border: solid 2px #EA413E;
+  font-size: 20px;
+  color: #EA413E;
+  background: 0 0;
+  transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  border: solid 2px black;
+  color: white;
+  background: black;
 }
 
 /* lists & artwork */
@@ -393,103 +494,6 @@ footer {
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* globals */
-
-body, html {
-  border-top: .2em solid black;
-}
-
-.pure-g [class *= "pure-u"],
-.pure-g-r [class *= "pure-u"] {
-  font-family: $body-font, serif;
-  font-size: 18px;
-  font-weight: $body-font-weight;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-  color: $accent;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-a:hover {
-  color: darken($accent, 10%);
-}
-
-h1,h2,h3,h4,h5,h6 {
-  text-transform: uppercase;
-  font-family: $header-font, san-serif;
-  font-weight: $header-font-weight;
-}
-
-dd {
-  margin: 0px 0px 32px 0px;
-  line-height: 1.8em;
-  display: block;
-}
-
-dt {
-  font-weight: 600;
-  margin: 0px 0px 5px 0px;
-  display: block;
-}
-
-.custom-horizontal {
-    a:hover {
-      background: #333333;
-      color: #FFF;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-
-    }
-    li {
-        display: inline;
-        text-decoration: none;
-        padding-right: 1em;
-    }
-
-    //margin-top: 1.67em;
-    text-align:right;
-    @media (max-width: $breakpoint){
-        text-align: center;
-        margin-top: 1em;
-    }
-}
-
-.custom-vertical {
-  @media (max-width: $breakpoint-menu){
-    text-align: center;
-    margin-top: 40px;
-
-    ul {
-      padding-left: 0px;
-    }
-
-    ul li {
-      font-family: $nav-font;
-      font-weight: $nav-font-weight;
-      padding: 12px;
-      border: 1px white solid;
-      background-color: black;
-      a{
-        color: white;
-      }
-    }
-  }
-}
-
-.list-inline {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-}
-
 #projects h2 {
   font-family: oswald, sans-serif;
   font-weight: 400;
@@ -509,7 +513,7 @@ dt {
 }
 
 .title {
-  font-family: oswald;
+  font-family: oswald, sans-serif;
 }
 
 /* Pure CSS
@@ -545,12 +549,9 @@ dt {
 .custom-toggle {
   width: 34px;
   height: 34px;
-  display: block;
   position: absolute;
-  //top: 1;
-  left: 46%;
-  display: none;
-  margin-top: -20px;
+  left: 50%;
+  margin: -20px 0 0 -17px;
 }
 
 .custom-toggle .bar {
