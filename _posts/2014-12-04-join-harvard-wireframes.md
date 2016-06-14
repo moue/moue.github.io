@@ -46,5 +46,5 @@ Features:
 
 ![Club pop up, Sharon's design]({{ site.url }}/imgs/joinharvard/wireframes/popup2.jpg){: .image-half-width}
 
-## This was the final design.
+## Final Design
 ![Explore page design]({{ site.url }}/imgs/joinharvard/clubs.png){: .image-half-full-width}

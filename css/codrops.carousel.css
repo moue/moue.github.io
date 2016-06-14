@@ -1,0 +1,26 @@
+/* @Mary Lou - Codrops
+ * http://tympanus.net/codrops/2011/08/04/fullscreen-grid-portfolio/ 
+*/
+.thumbs-nav span{
+    position:absolute;
+    width:22px;
+    height:40px;
+    background:transparent url(../imgs/nav.png) no-repeat top left;
+    top:50%;
+    left:5px;
+    margin-top:-20px;
+    cursor:pointer;
+    text-indent:-9000px;
+    display:none;
+}
+.thumbs-nav span.thumbs-nav-next{
+    left:auto;
+    right:5px;
+    background-position:top right;
+}
+.thumbs-nav span.thumbs-nav-prev:hover{
+    background-position:bottom left;
+}
+.thumbs-nav span.thumbs-nav-next:hover{
+    background-position:bottom right;
+}

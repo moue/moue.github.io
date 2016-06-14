@@ -1,0 +1,40 @@
+- name: Harvard Advocate Website
+  link: http://theharvardadvocate.com/
+  role: Developer
+  dates_involved: January 2015 - May 2016
+  blurb: Rebuilt The Harvard Advocate website using Django framework, Bootstrap and Stripe API for payment processing. Team of 5-7.
+  feat: /imgs/projects/thumbs/advo-1.png
+  tag: personal-feat
+
+- name: Flip Exchange
+  link: http://flipexchange.github.io/
+  role: MIT 6.073/CMS.611 Creating Video Games
+  dates_involved: Spring 2016
+  blurb: Equal contributor to a 6-person group project for MIT 6.073/CMS.611 Creating Video Games class. Created a 2D platformer game using Unity game engine.
+  feat: https://docs.google.com/presentation/d/1HlnYu2iCd2Aprt5jBiwk5xsLzqwSaGKVC8hRTYZEMrE/edit?usp=sharing
+  tag: academic-feat
+
+- name: American Time Use
+  link: http://ustimeuse.github.io/
+  role: CS 171 Visualization
+  dates_involved: Spring 2016
+  blurb: Equal contributor to 3-person group project for CS 171 Visualization. Designed and developed a web-based interactive visualization about American Time Use in 2014 using D3.js. Honorable mention for best project.
+  feat: https://www.youtube.com/watch?v=03Zt8lC2A1k
+  tag: academic-feat
+
+- name: Predicting Popularity
+  link: http://belindazeng.github.io/goingviral
+  role: CS 109 Data Science
+  dates_involved: Fall 2015
+  blurb: Equal contributor to 4-person group project for CS 109 final project. Used python to conduct analysis and prediction on data collected using Twitter API
+  feat: https://www.youtube.com/watch?v=9tEz-7wnjwA
+  tag: academic
+
+- name: Join Harvard
+  link: http://joinharvard.com
+  role: Project manager, designer, and developer
+  dates_involved: March 2013
+  blurb: Designed and developed a website to help undergraduates discover new extracurriculars. Team of 3-5.
+  feat: /imgs/projects/thumbs/joinharvard-1.png
+  tag: personal-feat
+

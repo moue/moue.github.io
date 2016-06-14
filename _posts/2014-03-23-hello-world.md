@@ -1,5 +1,5 @@
 ---
-title: Hello World&#58; Start Here
+title: Hello World
 layout: post
 ---
 

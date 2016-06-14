@@ -3,32 +3,92 @@ layout: default
 title: Projects
 permalink: /projects/index.html
 ---
-<div class="pure-g-r">
-  <div class="pure-u-1">
-    <div class="box">
-      <h2>Philosophy</h2>
-      <p>Inspired by <em>The Power of Less</em> by Leo Babauta, I try to limit myself to working on three projects at any given time--if something interesting comes up in the meantime, I put that project on-deck.</p> 
-      <h2>Active</h2>
-      <dl>
-        <dt>Learn more web dev tools</dt>
-        <dd>Complete all angular.js courses on Code School and rewrite Join Harvard in angular.js</dd>
-        <dt><a href="http://theharvardadvocate.com/">Harvard Advocate Website</a></dt>
-        <dd>Comp tech.<dd>
-      </dl>
-      <h2>On-deck</h2>
-      <dt>
-        <dt>Senior year podcast<dt>
-        <dd>A series of 5 minute podcasts about whatever is on my mind at the moment.</dd>
-      </dt>
-      <h2>Past</h2>
-      <dl>
-        <dt><a href="http://www.hcs.harvard.edu/podcast/sports/">Puntkick Sports</a></dt>
-        <dd>Created fake sports site for first submissions to the Harvard Lampoon. Passed first cuts.<dd>
-        <dt><a href="http://www.harvardnaps.com/">Harvard Naps</a></dt>
-        <dd>Initiative to bring nap spaces to Harvard's campus</dd>
-        <dt><a href="http://joinharvard.com">Join Harvard</a></dt>
-        <dd>Worked in a team of 4 to design and develop a website to help undergraduates discover new extracurriculars.</dd>
-      </dl>
+<div id="projects" class="wrapper">
+  <div class="pure-g-r">
+    <div class="pure-u-1">
+      <div class="box">
+        <h2>Academic Projects</h2>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="box">
+        <h3>MIT 6.073/CMS.611: Flip Exchange</h3>
+        <a href="https://docs.google.com/presentation/d/1HlnYu2iCd2Aprt5jBiwk5xsLzqwSaGKVC8hRTYZEMrE/edit?usp=sharing">final presentation</a> |
+        <a href="http://flipexchange.github.io/">game</a> |
+        <a href="https://github.com/flipexchange/flipexchange">code</a>
+        <p>Created a 2D platformer game using Unity game engine. 1 of 4 games total made for class. Players switch between two worlds where they play a different character in each world. Created in 6 weeks. Team size: 6</p>
+        <figure><img src="{{base.url}}/imgs/projects/flip-exchange.png"></figure>
+        <h3>CS 109: Predicting Popularity</h3>
+        <a href="https://www.youtube.com/watch?v=9tEz-7wnjwA">demo video</a> |
+        <a href="http://belindazeng.github.io/goingviral/">website</a> |
+        <a href="https://github.com/belindazeng/goingviral/blob/master/goingviral.ipynb">Process Notebook</a>
+        <p>Equal contributor to 4-person group project for CS 109 final project. Used python to conduct analysis and prediction on data collected using Twitter API</p>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="box">
+        <h3>CS 171: American Time Use 2014</h3>
+        <a href="https://www.youtube.com/watch?v=03Zt8lC2A1k">demo video</a> |
+        <a href="http://ustimeuse.github.io/">website</a> |
+        <a href="{{base.url}}/assets/CS171ProcessBook.pdf">Process Book</a>
+        <p>Equal contributor to 3-person group project for CS 171 Visualization. Designed and developed a web-based interactive visualization about American Time Use in 2014 using D3.js. Honorable mention for best project.</p>
+        <figure><img src="{{base.url}}/imgs/projects/us-time-use.png"></figure>
+      </div>
+    </div>
+    <div class="pure-u-1">
+      <div class="box">
+        <h2>Personal Projects</h2>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="box">
+        <h3>Harvard Advocate Website</h3>
+        <a href="http://www.thecrimson.com/article/2015/2/3/harvard-advocate-launches-website/">press</a> | <a href="http://theharvardadvocate.com/">website</a>
+        <p>Rebuilt The Harvard Advocate website using Django framework and Stripe API for payment processing. Processed over $65,000 in donations, subscriptions, and issue purchases in 1.5 years. Team of 5-7.</p>
+        <p>Note: Personally, I found this project valuable because it taught me so much about using Github / version control.</p>
+        <figure><img src="{{base.url}}/imgs/projects/thumbs/advo-2.png"></figure>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="box">
+        <figure><img src="{{base.url}}/imgs/projects/advo-3.png"></figure>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="box">
+        <h3>Join Harvard</h3>
+        <a href="{{base.url}}{% post_url 2014-12-04-join-harvard-wireframes %}">Design Process</a> | <a href="http://www.joinharvard.com">website</a>
+        <p>Designed and developed an intuitive interface to help undergraduates discover new extracurriculars. Built over spring spreak. Team of 4-5. Pitched to Harvard's CTO. Featured on HUIT Student App Spotlight, the landing page on campus computers.</p>
+        <p>Note: the project that I enjoyed working on the most because it was my first hands-on experience with product management and user experience design.</p>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="box">
+        <figure class="pad-top"><img src="{{base.url}}/imgs/projects/thumbs/joinharvard-1.png"></figure>
+      </div>
+    </div>
+    <div class="pure-u-1">
+      <div class="box">
+        <h2>Other / Misc</h2>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="box">
+        <h3>Comedy Hack Day: iCare</h3>
+        <a href="http://www.comedyhackday.org/mit-2013">Event</a>
+        <figure class="pad-top" id="demo-vid"><iframe src="https://player.vimeo.com/video/92651025" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>
+        <p><a href="https://vimeo.com/92651025">Comedy Hack Day at the Media Lab: iCare</a> from <a href="https://vimeo.com/cultivatedwit">Cultivated Wit</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="box">
+        <h3>Taking Time Off at Harvard Panel</h3>
+        <a href="http://bsc.harvard.edu/event/taking-time-harvard">Event</a>
+        <p>Organized and moderated a discussion panel with 6 students on their experiences taking time off for one or more semesters. Sought and received sponsorship from the Bureau of Study Council. Approximately 40-50 students attended the panel.</p>
+
+        <h3>Nap Spaces</h3>
+        <p>Spearheaded student movement for creation of campus nap room. Implemented a Wellness Space on 2nd floor of Cabot Science Library.</p>
+      </div>
     </div>
   </div>
 </div>

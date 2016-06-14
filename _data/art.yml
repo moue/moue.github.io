@@ -1,0 +1,19 @@
+- title: The Last Empress
+  large: /imgs/art-emp.jpg
+  small: /imgs/thumbs/art-emp-small.jpg
+  description: Photoshop
+
+- title: Face Off
+  large: /imgs/art-face.jpg
+  small: /imgs/thumbs/art-face-small.jpg
+  description: Photoshop
+
+- title: Portrait of a Swimmer
+  large: /imgs/art-swim.jpg
+  small: /imgs/thumbs/art-swim-small.jpg
+  description: Photoshop
+
+- title: Datamatch 2012
+  large: /imgs/art-info.jpg
+  small: /imgs/thumbs/art-info-small.jpg
+  description: Infographic of Harvard Computer Society dating survey results. Illustrator

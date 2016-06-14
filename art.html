@@ -4,32 +4,23 @@ title: Artwork
 permalink: /artwork/index.html
 ---
 
-<div class="pure-u-1" id="recs">
-  <div class="box">
-    <h2>Digital Art Work</h2>
-    <figure>
-      <a href="{{ site.baseurl }}/imgs/art-emp.jpg" data-lightbox="art" title="The Last Empress. Photoshop."><img src="{{ site.baseurl }}/imgs/art-emp.jpg"></a>
-      <figcaption>The Last Empress. Photoshop.</figcaption>
-    </figure>
-
-    <figure>
-      <a href="{{ site.baseurl }}/imgs/art-face.jpg" data-lightbox="art" title="Face Off. Photoshop."><img src="{{ site.baseurl }}/imgs/art-face.jpg"></a>
-      <figcaption>Face Off. Photoshop.</figcaption>
-    </figure>
-
-    <figure>
-      <a href="{{ site.baseurl }}/imgs/art-swim.jpg" data-lightbox="art" title="Portrait of a Swimmer. Photoshop."><img src="{{ site.baseurl }}/imgs/art-swim.jpg"></a>
-      <figcaption>Portrait of a Swimmer. Photoshop.</figcaption>
-    </figure>
-  </div>
-</div>
-
-<div class="pure-u-1" id="infograph">
-  <div class="box">
-    <h2>Graphic Design Work</h2>
-    <figure>
-      <a href="{{ site.baseurl }}/imgs/art-info.jpg" data-lightbox="art" title="Datamatch 2012. Infographic of Harvard Computer Society dating survey results. Illustrator."><img src="{{ site.baseurl }}/imgs/art-info.jpg"></a>
-      <figcaption>Datamatch 2012. Illustrator.</figcaption>
-    </figure>
-  </div>
+<div class="pure-u-1">
+  <a name="artwork"></a>
+  <ul class="gallery-items">
+    {% for image in site.data.art %}
+    <li class="gallery-item">
+      <div class="gallery-contents">
+        <div class="thumbnail gallery-trigger"><img src="{{base.url}}{{image.small}}" alt="" /></div>
+      </div>
+      <div class="gallery-expander">
+        <div class="gallery-expander-contents">
+          <div class="gallery-trigger-close close">x</div>
+            <div class="title">{{image.title}}</div>
+            <div class="contents">{{image.description}}</div>
+            <div class="image"><img src="{{base.url}}{{image.large}}" alt="" /></div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
 </div>

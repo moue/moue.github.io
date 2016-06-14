@@ -1,0 +1,605 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+/* fonts */
+@font-face {
+  font-family: 'oswald';
+  src: url('../fonts/oswald/Oswald-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('../fonts/oswald/Oswald-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('../fonts/oswald/Oswald-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/open-sans/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/open-sans/OpenSans-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quattrocento';
+  src: url('../fonts/quattrocento/Quattrocento-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neuton';
+  src: url('../fonts/neuton/Neuton-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'carton-slab';
+  src: url('../fonts/carbon-slab/carton-slab-webfont.eot');
+  src: url('../fonts/carbon-slab/carton-slab-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/carbon-slab/carton-slab-webfont.woff') format('woff'),
+  url('../fonts/carbon-slab/carton-slab-webfont.ttf') format('truetype'),
+  url('../fonts/carbon-slab/carton-slab-webfont.svg#cartonslab') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'permanent-marker';
+  src: url('../fonts/permanent-marker/PermanentMarker.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/** variables **/
+$accent: #EA413E;
+$breakpoint: 767px;
+$breakpoint-menu: 767px;
+$section-color: #F6F3ED;
+$nav-font: permanent-marker;
+$nav-font-weight: 400;
+$header-font: oswald;
+$header-font-weight: 400;
+$body-font: open-sans;
+$body-font-weight: 400;
+$subtitle-font: open-sans;
+$subtitle-font-weight: 600;
+$wrapper-width: 1050px;
+
+/*! 
+ * Helper css classes
+ *
+ */
+
+.center {
+  vertical-align: middle;
+}
+
+.wrapper {
+  max-width: $wrapper-width;
+  min-height: 100%;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.section-a {
+  margin: 30px 0px;
+  padding: 30px 0px;
+  background-color: $section-color;
+}
+
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+    margin-top: 15px;
+}
+
+.btn-outline {
+    border: solid 2px #EA413E;
+    font-size: 20px;
+    color: #EA413E;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px black;
+    color: white;
+    background: black;
+}
+
+#post {
+  .image-half-width-left {
+    float: left;
+    max-width: 50%;
+    @media (max-width: $breakpoint){
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      float: none;
+    }
+  }
+
+  .image-half-width {
+    max-width: 50%;
+    @media (max-width: $breakpoint){
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+
+    }
+  }
+
+  .image-half-width-center {
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    @media (max-width: $breakpoint){
+      max-width: 90%;
+    }
+  }
+
+  .image-half-full-width {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 75%;
+    @media (max-width: $breakpoint){
+      max-width: 90%;
+    }
+  }
+}
+
+hr.separator {
+  height: 2px;
+  color: #e0e0e0;
+  background-color: #e0e0e0;
+  border: none;
+  margin: 40px 0;
+}
+
+/* grid */
+
+.box {
+  padding: 0em 1em;
+}
+
+/* mixins */
+
+.pad-top {
+  padding-top: 1em;
+}
+
+.pad-bottom {
+  padding-bottom: 1em;
+}
+
+.pad-right {
+  padding-right: 1em;
+}
+
+.pad-left {
+  padding-left: 1em;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+/* header */
+
+#title {
+  h1 {
+    margin-top: 0px;
+    font-family: $nav-font, san-serif;
+    color: black;
+    position:relative;
+    top:-5px;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: $accent;
+  }
+
+  float:left;
+  @media(max-width: $breakpoint-menu) {
+    float:none;
+  }
+}
+
+#navigation {
+  //float:right;
+  @media(max-width: $breakpoint-menu) {
+    float:none;
+    margin-top: 20px;
+  }
+}
+
+header {
+  margin-bottom: 3em;
+  @media(max-width: $breakpoint-menu) {
+    text-align: center;
+  }
+}
+
+nav {
+  a {
+    font-size: 1.3em;
+    padding: 4px 12px 6px;
+    font-family: $nav-font, san-serif;
+    font-weight: $nav-font-weight;
+    text-transform: uppercase;
+  }
+
+  //text-align: right;
+  @media(max-width: $breakpoint-menu) {
+    text-align: center;
+  }
+}
+
+.custom-ul {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* footer */
+
+footer {
+  margin: 3em 0em;
+  border-top: black 1px solid;
+
+
+  #attr {
+    text-align: right;
+  }
+  @media(max-width: $breakpoint) {
+    text-align: center;
+    #attr {
+      text-align: center;
+    }
+    p {
+      margin-bottom: 0em;
+    }
+  }
+}
+
+/* home */
+
+.intro {
+  font-family:$subtitle-font;
+  font-weight:$subtitle-font-weight;
+  font-size: 28px;
+  @media(max-width: $breakpoint-menu) {
+    margin-top: 0px;
+  }
+}
+
+.round {
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+#selfie {
+  text-align: center;
+}
+
+/* lists & artwork */
+
+#recs img {
+  height: 275px;
+  width: auto;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+#recs figure {
+  padding-right: 1em;
+  padding-bottom: 1em;
+  float: left;
+  overflow: hidden;
+}
+
+#infograph figure {
+  padding-right: 1em;
+  padding-bottom: 1em
+}
+
+#infograph img {
+  width: 270px;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* globals */
+
+body, html {
+  border-top: .2em solid black;
+}
+
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+  font-family: $body-font, serif;
+  font-size: 18px;
+  font-weight: $body-font-weight;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $accent;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover {
+  color: darken($accent, 10%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-transform: uppercase;
+  font-family: $header-font, san-serif;
+  font-weight: $header-font-weight;
+}
+
+dd {
+  margin: 0px 0px 32px 0px;
+  line-height: 1.8em;
+  display: block;
+}
+
+dt {
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+  display: block;
+}
+
+.custom-horizontal {
+    a:hover {
+      background: #333333;
+      color: #FFF;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+    }
+    li {
+        display: inline;
+        text-decoration: none;
+        padding-right: 1em;
+    }
+
+    //margin-top: 1.67em;
+    text-align:right;
+    @media (max-width: $breakpoint){
+        text-align: center;
+        margin-top: 1em;
+    }
+}
+
+.custom-vertical {
+  @media (max-width: $breakpoint-menu){
+    text-align: center;
+    margin-top: 40px;
+
+    ul {
+      padding-left: 0px;
+    }
+
+    ul li {
+      font-family: $nav-font;
+      font-weight: $nav-font-weight;
+      padding: 12px;
+      border: 1px white solid;
+      background-color: black;
+      a{
+        color: white;
+      }
+    }
+  }
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+
+#projects h2 {
+  font-family: oswald, sans-serif;
+  font-weight: 400;
+}
+
+#projects h3,h4 {
+  font-family: oswald, sans-serif;
+  font-weight: 300;
+}
+
+#projects figure img {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.2),0 2px 2px rgba(0,0,0,.2);
+}
+
+#projects a {
+  text-transform: capitalize;
+}
+
+.title {
+  font-family: oswald;
+}
+
+/* Pure CSS
+ * Responsive Horizontal-to-Vertical Menu
+ * http://purecss.io/layouts/tucked-menu-vertical/
+ */
+
+.custom-wrapper {
+  margin-top: 1.67em;
+  //background-color: #ffd390;
+  margin-bottom: 1em;
+  -webkit-font-smoothing: antialiased;
+  height: 2.1em;
+  overflow: hidden;
+  @media(max-width: $breakpoint-menu) {
+    height: 5em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+  }
+}
+
+.custom-wrapper.open {
+  height: 22em;
+}
+
+.custom-menu-3 {
+  text-align: right;
+}
+
+.custom-toggle {
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  //top: 1;
+  left: 48%;
+  display: none;
+  margin-top: -20px;
+}
+
+.custom-toggle .bar {
+  background-color: #777;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  text-align: center;
+  //margin:auto;
+  //top: 1;
+  margin-top: 15px;
+  left: 20%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+  .custom-menu-3 {
+    text-align: left;
+  }
+
+  .custom-toggle {
+    display: block;
+  }
+
+}
