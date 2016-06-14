@@ -1,10 +1,16 @@
-[Yuqi Hou](yuqihou.com)
+[Yuqi Hou](http://www.yuqihou.com/)
 ====
 
 Yuqi Hou's personal site, blog, and portfolio. 
 
-* Hosted at [yuqihou.com](yuqihou.com).
-* Personal website and blog of Yuqi Hou, made with jekyll 2.4.0 and hosted as a Github user page. 
+* Hosted at [yuqihou.com](http://www.yuqihou.com/).
+* Personal website and blog of Yuqi Hou
+
+Uses
+---
+* Github Pages
+* Pure v0.3.0
+* Jekyll 2.4.0
 
 Credits
 ----
