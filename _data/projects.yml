@@ -1,18 +1,18 @@
-- name: Harvard Advocate Website
-  link: http://theharvardadvocate.com/
-  role: Developer
-  dates_involved: January 2015 - May 2016
-  blurb: Rebuilt The Harvard Advocate website using Django framework, Bootstrap and Stripe API for payment processing. Team of 5-7.
-  feat: /imgs/projects/thumbs/advo-1.png
-  tag: personal-feat
-
 - name: Flip Exchange
   link: http://flipexchange.github.io/
   role: MIT 6.073/CMS.611 Creating Video Games
   dates_involved: Spring 2016
   blurb: Equal contributor to a 6-person group project for MIT 6.073/CMS.611 Creating Video Games class. Created a 2D platformer game using Unity game engine.
   feat: https://docs.google.com/presentation/d/1HlnYu2iCd2Aprt5jBiwk5xsLzqwSaGKVC8hRTYZEMrE/edit?usp=sharing
-  tag: academic-feat
+  tag: featured
+
+- name: Harvard Advocate Website
+  link: http://theharvardadvocate.com/
+  role: Developer
+  dates_involved: January 2015 - May 2016
+  blurb: Rebuilt The Harvard Advocate website using Django framework, Bootstrap and Stripe API for payment processing. Team of 5-7.
+  feat: /imgs/projects/thumbs/advo-1.png
+  tag: featured
 
 - name: American Time Use
   link: http://ustimeuse.github.io/

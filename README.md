@@ -12,6 +12,12 @@ Uses
 * Pure v0.3.0
 * Jekyll 2.4.0
 
+Quickstart
+---
+```
+bundle exec jekyll serve
+```
+
 Credits
 ----
 * Thumbnail expanding preview plug-in by [tastelab-kr](http://www.jqueryscript.net/gallery/Thumbnail-Grid-with-Expanding-Image-Preview-Using-jQuery.html)
@@ -23,7 +29,6 @@ Inspiration
 ----
 * [Frank Wu](http://frankjwu.com)
 * [Joel Glovier](http://joelglovier.com/)
-* [Lillian Chen](http://lillian-chen.com/)
 * [Lilian Chen](http://www.lilchen.com/)
 * [Diane Yang](http://www.dianexyang.com/)
 

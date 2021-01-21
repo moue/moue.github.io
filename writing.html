@@ -1,0 +1,35 @@
+---
+layout: default
+title: Writing
+permalink: /writing/index.html
+---
+
+<div class="wrapper">
+  <div class="pure-g-r">
+    <div class="pure-u-1">
+      <div class="box">
+
+    <h2>Selected Publications</h2>
+    <h3>These are some of the places that have accepted my humor writing!</h3>
+    <dl>
+    {% for post in site.data.writing %}
+    <dt>
+      <a href="{{ post.url }}">{{ post.title }}</a>, {{ post.note }}
+      <i>{{ post.site }}</i>
+    </dt>
+    <dd>{{ post.excerpt }}</dd>
+    {% endfor %}
+  </dl>
+
+    <h2>Elsewhere</h2>
+    <h3>Other places where I write!</h3>
+    <dl>
+      <dt><a href="https://blog.yuqihou.com/">Personal Blog</a></dt>
+      <dd>Rarely updated.</dd>
+      <dt><a href="https://ironicheroine.wordpress.com/">Book Blog</a></dt>
+      <dd>Even less frequently updated and full of spoilers.</dd>
+    </dl>
+  </div>
+</div>
+</div>
+</div>

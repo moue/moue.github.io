@@ -11,8 +11,11 @@ permalink: /index.html
   </div><!--end selfie-->
   <div id="intro">
     <div class="box">
-      <p>Hello, I'm Yuqi. I'm a product manager at $GS. This is a place for me to share my <a href="/projects">projects</a> and <a href="/artwork">art</a>. I <a href="http://blog.yuqihou.com/" target="_blank">blog</a> occasionally.</p>
+      <p>Hello, I'm Yuqi. I'm a writer and product manager based in Maryland. Currently, I work remotely at $GS (NYC). I write humor and fiction.</p></p>
       <ul class="list-inline">
+        <li>
+          <a href="https://twitter.com/yuqih" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter center"></i></a>
+        </li>
         <li>
           <a href="https://github.com/moue" class="btn-social btn-outline"><i class="fa fa-fw fa-github center"></i></a>
         </li>
@@ -30,27 +33,24 @@ permalink: /index.html
   <div class="pure-u-1">
     <div class="wrapper">
       <div class="box">
-        <h2>Course Work</h2>
+        <h2>Latest Publications</h2>
         <dl>
-        {% for project in site.data.projects%}
-        {% if project.tag == "academic-feat" %}
-          <dt><a href="{{project.link}}">{{project.name}}</a> ({{project.dates_involved}})</dt>
-          <dd>{{project.blurb}}</dd>
+        {% for post in site.data.writing %}
+        {% if post.tag == "featured" %}
+        <dt>
+          <i>{{ post.site }}</i>,
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          ({{ post.year }})
+        </dt>
+        <dd>{{ post.excerpt }}</dd>
         {% endif %}
         {% endfor %}
-        </dl>
-      </div>
-    </div>
-  </div>
-  <div class="pure-u-1">
-    <div class="wrapper">
-      <div class="box">
-        <h2>Personal Work</h2>
+        <h2>Past Projects</h2>
         <dl>
-        {% for project in site.data.projects %}
-        {% if project.tag == "personal-feat" %}
-        <dt><a href="{{project.link}}">{{project.name}}</a> ({{project.dates_involved}})</dt>
-        <dd>{{project.blurb}}</dd>
+        {% for project in site.data.projects%}
+        {% if project.tag == "featured" %}
+          <dt><a href="{{project.link}}">{{project.name}}</a> ({{project.dates_involved}})</dt>
+          <dd>{{project.blurb}}</dd>
         {% endif %}
         {% endfor %}
         </dl>
